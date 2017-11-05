@@ -10,10 +10,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var csscomb = require('gulp-csscomb');
 var bourbon = require('node-bourbon');
-
-gulp.task('hello', function() {
-    console.log('Hello!');
-});
+var csso = require('gulp-csso');
+var htmlhint = require("gulp-htmlhint");
 
 gulp.task('sprite', function() {
     var spriteData =
@@ -42,6 +40,7 @@ gulp.task('sass', function() {
         .pipe(autoprefixer(['last 15 versions'])) //подключаем Autoprefixer
         .pipe(cleanCSS())
         .pipe(csscomb())
+        .pipe(csso()) // минифицируем css, полученный на предыдущем шаге
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 });
@@ -54,15 +53,26 @@ gulp.task('browserSync', ['sass', 'pug'], function() {
     })
 });
 
+gulp.task('compress', function() {
+    gulp.src('src/img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('src/img/compress'))
+});
+
+
+gulp.task('htmlhint', function() {
+    gulp.src("./src/**/*.html")
+        .pipe(htmlhint())
+        .pipe(htmlhint.reporter())
+});
+
 gulp.task('watch', ['pug','sass', 'browserSync'], function() {
     gulp.watch('src/pug/**/*.pug', ['pug']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 
-gulp.task('compress', function() {
-    gulp.src('src/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('src/img/compress'))
-});
+
+
+
 
