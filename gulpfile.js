@@ -29,6 +29,7 @@ gulp.task('pug', function() {
     return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
         .pipe(pug({pretty: '\t'}))
         .on("error", notify.onError())
+        .pipe(browserSync.reload({stream: true}))
         .pipe(gulp.dest('app'));
 });
 
@@ -48,7 +49,7 @@ gulp.task('sass', function() {
 gulp.task('browserSync', ['sass', 'pug'], function() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: 'app'
         }
     })
 });
@@ -56,7 +57,7 @@ gulp.task('browserSync', ['sass', 'pug'], function() {
 gulp.task('compress', function() {
     gulp.src('src/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('src/img/compress'))
+        .pipe(gulp.dest('app/img'))
 });
 
 
