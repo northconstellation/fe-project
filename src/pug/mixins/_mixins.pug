@@ -3,8 +3,13 @@ mixin head-meta(title, description, href)
     meta(name="description" content=description)
     link(rel="canonical" href=href)
 
-//mixin menu(link, textlink)
-//    href=link
-//    text=textlink
-//    li.b-menu__item
-//        a(href=link)
+mixin headermenu(href, textlink)
+    li
+        a(href="href")= textlink
+
+mixin reason_item(src, title, text)
+    .b-reason__reasoncol
+        .b-reasoncol
+        img.b-reasoncol__ico(src=src)
+        p.b-reasoncol__title= title
+        p.b-reasoncol__text= text

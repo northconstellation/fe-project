@@ -1,19 +1,15 @@
-//include ../mixins/_mixins
+include ../mixins/_mixins
 header
     .b-header__top
         .b-top
             .b-top__logo
                 .b-logo
                     img.b-logo__img(src="img/logo.png")
+                .b-headermenu
+                    + headermenu("home","Home")
+                    + headermenu("aboutus","About us")
+                    + headermenu("contacts","Contacts")
 
-                nav
-                    ul.b-menu
-                        li.b-menu__item
-                            a(href="#") home
-                        li.b-menu__item
-                            a(href="#") about us
-                        li.b-menu__item
-                            a(href="#") contacts
     .b-header__inform
         .b-inform
             .b-inform

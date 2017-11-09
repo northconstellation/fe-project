@@ -1,12 +1,11 @@
 include ../mixins/_mixins
 doctype html
 block head
-    include ../includes/_head
-        +head-meta(
+    +head-meta(
         'FOREST ',
         'our project',
         'http://example.com'
-        )
+    )
 body
     block header
         include ../includes/_header
