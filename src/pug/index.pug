@@ -1,7 +1,63 @@
 extends layouts/_layout.pug
+block variables
+    -var currentPage='home'
 block main
+    .b-wrap__tabs
+        .b-tabs
+            .b-tabs__blocktext
+                .b-blocktext
+                    .b-blocktext__tabsbtn
+                        .b-tabsbtn
+                            .b-tabsbtn__list
+                                ul.b-list
+                                    li.b-list__item tab1
+                                    li.b-list__item tab2
+                                    li.b-list__item tab3
+                    .b-blocktext__tabstext
+                        .b-tabstext
+                            p.b-tabstext__title The Forest is a first-person open
+                            p.b-tabstext__text In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.
+                            p.b-tabstext__text  Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.
+                            .b-tabstext__loadbtn
+                                .b-loadbtn
+                                button.b-loadbtn__dtn Download
+            .b-tabs__blockimg
+                .b-blockimg
+                    img.b-blockimg__img(src="img/about_pic1.jpg")
+    .b-wrap__structure
+        .b-structure
+            .b-tabs__blockimg
+                .b-blockimg
+                    img.b-blockimg__img(src="img/about_pic2.jpg")
+            .b-tabs__blocktext
+                .b-blocktext
+                    .b-blocktext__title Structure type
+                    .b-blocktext__line
+                    .b-blocktext__text Bridges may be classified by how the forces of tension, compression, bending, torsion and shear are distributed through their structure.
+                    .b-blocktext__structlist
+                        ul.b-structlist
+                            li.b-structlist__item
+                                p.b-structlist__title Understory
+                                    span.b-structlist__text is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.
+                            li.b-structlist__item
+                                p.b-structlist__title Canopy
+                                    span.b-structlist__text Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy
+    .b-wrap__solution
+        .b-solution
+            .b-tabs__blocktext
+                .b-blocktext
+                    .b-blocktext__title Long forest evolution
+                    .b-blocktext__line
+                    p.b-blocktext__text A forest is a large area of land covered with trees or other woody vegetation. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function. These thresholds are typically the number.
+                    p.b-blocktext__text Forests at different latitudes form distinctly different ecozones: boreal forests.
+            .b-tabs__blockimg
+                .b-blockimg
+                    img.b-blockimg__img(src="img/about_pic3.jpg")
+
     include includes/_important
+    .b-wrap__pricingoption
+        .b-pricingoption
+            
     include includes/_ecologist
     include includes/_wooddesign
-    include includes/_stylish wood design
     include includes/_contact us
