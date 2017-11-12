@@ -1,0 +1,83 @@
+[33mcommit eedcec3773e412748efa546fa52d59048a35c18f[m[33m ([m[1;36mHEAD -> [m[1;32mandrii[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Sat Nov 11 00:11:09 2017 +0200
+
+    index all html
+
+[33mcommit df2c839d1942e441748f58e38f95219e74a17fb9[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Fri Nov 10 23:15:11 2017 +0200
+
+    index template
+
+[33mcommit c2aa0083942f6e301283077f55a475ea3f75f57a[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Thu Nov 9 23:08:05 2017 +0200
+
+    4
+
+[33mcommit b3ecade5760d5b9821e6d5a08eb28e2b1c13ef0f[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Thu Nov 9 23:03:26 2017 +0200
+
+    3
+
+[33mcommit c4e6ddadd6bece978627c30fdb3a83298c3be0b1[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Wed Nov 8 17:51:52 2017 +0200
+
+    mixins
+
+[33mcommit eb241af7c3f002ed2807820bab5d065f31f5e9c0[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Wed Nov 8 15:33:29 2017 +0200
+
+    stas-blocks
+
+[33mcommit eade8edf7cc92269f664ef016a5d6ec9d93fa030[m[33m ([m[1;31morigin/andrii_includes[m[33m)[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Wed Nov 8 14:51:40 2017 +0200
+
+    andrii_includes
+
+[33mcommit f1b2be8ba694f1a8e5d8d00a23caf34a144d8634[m[33m ([m[1;31morigin/ira[m[33m)[m
+Author: irynafrontend <irynafrontend@gmail.com>
+Date:   Wed Nov 8 14:33:58 2017 +0200
+
+    ira's includes
+
+[33mcommit de36e89ec3c7ef2baac104cb28f42ad41f96652d[m[33m ([m[1;31morigin/andrii[m[33m)[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sun Nov 5 20:38:38 2017 +0200
+
+    add new plugins
+
+[33mcommit 704997c7d786ddf07650055967167fcf813783d7[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sun Nov 5 20:26:54 2017 +0200
+
+    delete ginignore
+
+[33mcommit fca0c5aa2d128b9c85301563a074b1cf4ee21e1d[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sun Nov 5 20:21:21 2017 +0200
+
+    add gitignorefile
+
+[33mcommit 2c3a56e248249221a37281345f0e3429febbcc11[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sun Nov 5 18:18:15 2017 +0200
+
+    delete node_moduls
+
+[33mcommit 3b22ccc497fee576def9c61c72d20cd48aceeb40[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sat Nov 4 18:51:13 2017 +0200
+
+    nodmoduls ignore
+
+[33mcommit e8b6f0631b9be287b6cc11c7ca3a9e85ed6ef367[m
+Author: northconstellation <irynafrontend@gmail.com>
+Date:   Sat Nov 4 18:49:25 2017 +0200
+
+    add gulpfile

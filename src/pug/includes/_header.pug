@@ -5,15 +5,15 @@ header
             .b-top__logo
                 .b-logo
                     img.b-logo__img(src="img/logo.png")
-                -var menu=[{title: 'Home', href: 'home'}, {title: 'Contact us', href: 'contacts'}, {title: 'About us', href: 'about-us'}]
+                -var menu=['Home', 'About us', 'Contacts', 'Blog']
                 nav.b-headermenu
                     ul
-                        each itemName in menu
+                        each item in menu
                             li
-                                if itemName.href === currentPage
-                                    span.carrent-page= itemName.title
+                                if item === currentPage
+                                    span.current-page=item
                                 else
-                                    a(href=itemName.href)= itemName.title
+                                    a(href=item.toLowerCase().replace("\ ", "-")+".html")=item
     .b-header__inform
         .b-inform
             .b-inform
