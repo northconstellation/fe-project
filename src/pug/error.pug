@@ -1,0 +1,14 @@
+extends layouts/_layout.pug
+block prepend head
+	+head-meta(
+		'Error 404 | Forest'
+	)
+block header
+block main
+	.wrap
+		h1.error-page__name
+		.error-page__info
+			h2.error-page__info-title Sorry!
+			p.error-page__info-text The page you’re looking for was not found
+			a.error-page__info-link Go back
+block footer
