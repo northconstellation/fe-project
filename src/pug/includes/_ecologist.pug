@@ -2,27 +2,18 @@
 	h2.block__title.block__title--ecologist What our ecologists are saying
 	p.block__watchword.block__watchword--ecologist A broader coverage related to this top
 	.ecologist__feedback-wrap
-
-		//- mixin content(text, image, name, profesion)
-		//- 	p.ecologist__feedback-text= text
-		//- 	p.ecologist__feedback-img
-		//- 		img= (src='image')
-		//- 	p.ecologist__feedback-name= name
-		//- 	span.ecologists__feedback-proffesion= profesion
-		//- +content(
-		//- 	'Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition', 
-		//- 	'img/ecologist_photo1.png',
-		//- 	'Ann klot',
-		//- 	'Ecologist')
-		p.ecologist__feedback-text Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition
-		p.ecologist__feedback-img
-			img(src='img/ecologist_photo1.png')
-		p.ecologist__feedback-name Ann klot
-		p.ecologist__feedback-text Administrative definitions are based primarily upon the legal designations of land, and commonly bear no relationship to the vegetation growing on the land.
-		p.ecologist__feedback-img
-			img(src='img/ecologist_photo2.png')
-		p.ecologist__feedback-name John Lino
-		p.ecologist__feedback-text A forest is made up of many layers. Starting from the ground level and moving up, the main layers of all forest types are the forest floor.
-		p.ecologist__feedback-img
-			img(src='img/ecologist_photo3.png')
-		p.ecologist__feedback-name John Lino
+		+content(
+		'Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition',
+		'img/ecologist_photo1.png',
+		'Ann klot',
+		'Ecologist')
+		+content(
+		'Administrative definitions are based primarily upon the legal designations of land, and commonly bear no relationship to the vegetation growing on the land.',
+		'img/ecologist_photo2.png',
+		'John Lino',
+		'Ecologist')
+		+content(
+		'A forest is made up of many layers. Starting from the ground level and moving up, the main layers of all forest types are the forest floor.',
+		'img/ecologist_photo3.png',
+		'John Lino',
+		'Ecologist')

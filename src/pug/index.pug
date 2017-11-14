@@ -36,12 +36,8 @@ block main
                     .b-blocktext__text Bridges may be classified by how the forces of tension, compression, bending, torsion and shear are distributed through their structure.
                     .b-blocktext__structlist
                         ul.b-structlist
-                            li.b-structlist__item
-                                p.b-structlist__title Understory
-                                    span.b-structlist__text is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.
-                            li.b-structlist__item
-                                p.b-structlist__title Canopy
-                                    span.b-structlist__text Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy
+                            +b-structlist__item("Understory", "is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.")
+                            +b-structlist__item("Canopy", "Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy")
     .b-wrap__solution
         .b-solution
             .b-tabs__blocktext
@@ -62,55 +58,13 @@ block main
             .b-pricingoption__subtitle For a broader coverage related to this topic of trees.
             .b-pricingoption__packet
                 .b-packet
-                    .b-packet__packetitem
-                        .b-packetitem
-                            .b-packetitem__title
-                                p Basic
-                            .b-packetitem__price
-                                .b-price
-                                    p.b-price__num $
-                                        span 0
-                                    p.b-price__text.b-price__textitalic Free for life
-                            .b-packetitem__packetlist
-                                ul.b-packetlist
-                                    li.b-packetlist__item Canopy
-                                    li.b-packetlist__item Clearcutting
-                                    li.b-packetlist__item Close to nature
-                                    li.b-packetlist__item forestry
-                                    li.b-packetlist__item Cloud forest
-                                    li.b-packetlist__item Chase
-                    .b-packet__packetitem
-                        .b-packetitem
-                            .b-packetitem__title
-                                p Professional
-                            .b-packetitem__price.packet__middle
-                                .b-price
-                                    p.b-price__num $
-                                        span 19
-                                    p.b-price__text Monthly payment
-                            .b-packetitem__packetlist
-                                ul.b-packetlist
-                                    li.b-packetlist__item Dendrometry
-                                    li.b-packetlist__item Ecological succession
-                                    li.b-packetlist__item Forest dynamics
-                                    li.b-packetlist__item Forest management
-                                    li.b-packetlist__item Forest migration
-                    .b-packet__packetitem
-                        .b-packetitem
-                            .b-packetitem__title
-                                p Enterprice
-                            .b-packetitem__price
-                                .b-price
-                                    p.b-price__num $
-                                        span 70
-                                    p.b-price__text Monthly payment
-                            .b-packetitem__packetlist
-                                ul.b-packetlist
-                                    li.b-packetlist__item Definition
-                                    li.b-packetlist__item Etymology
-                                    li.b-packetlist__item Evolution
-                                    li.b-packetlist__item Ecology
-                                    li.b-packetlist__item Components
+                    +b-packet__packetitem ("Basic", "0", "Free for life")
+                    -var list = ["Canopy", "Clearcutting", "Close to nature", "forestry",  "Cloud forest", "Chase"]
+                    +b-packet__packetitem ("Professional", "19", "Monthly payment")
+                    -var list = ["Dendrometry", "Ecological succession", "Succession", "Forest dynamics",  "Forest management", "Forest migration"]
+                    +b-packet__packetitem ("Enterprice", "70", "Monthly payment")
+                    -var list = ["Definition", "Etymology", "Succession", "Evolution",  "Ecology", "Components"]
+
     include includes/_ecologist
     include includes/_wooddesign
     include includes/_contact us

@@ -4,7 +4,9 @@
             p.b-formtitle The
                 span.b-formtitle__special games
             p.b-formtitle pre-alpha
-        input.b-formheader__input(type="text" placeholder="name")
-        input.b-formheader__input(type="email" placeholder="email")
-        textarea.b-formheader__input(type="text" placeholder="message")
-        button.b-formheader__btn(type="submit" name="formheader-btn") Get started
+        -var inputform= [{type: "text", placeholder: "name"}, {type: "email", placeholder: "Email"}, {type: "text", placeholder: "Message"}, {type: "submit", value: "Get started"}]
+        each item in inputform
+            if(!value)
+                input.b-formheader__input(type= item.type, placeholder= item.placeholder)
+            else
+                input.b-formheader__btn(type= item.type, value= item.value)
