@@ -19,14 +19,10 @@ mixin b-packet__packetitem(title, price, subtitle)
 					p.b-price__num $
 						span= price
 					p.b-price__text= subtitle
-					.b-packetitem__packetlist
-						ul.b-packetlist
-							li.b-packetlist__item Dendrometry
-							li.b-packetlist__item Ecological succession
-							li.b-packetlist__item Forest dynamics
-							li.b-packetlist__item Forest management
-							li.b-packetlist__item Forest migration
-
+			.b-packetitem__packetlist
+				ul.b-packetlist
+				each item in listpacket
+					li= item
 mixin b-structlist__item(title, text)
 	li.b-structlist__item
 		p.b-structlist__title= title
