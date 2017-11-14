@@ -1,19 +1,15 @@
 mixin head-meta(title, description, href)
-	title= title
-	meta(name="description" content= description)
-	link(rel="canonical" href= href)
+    title= title
+    meta(name="description" content= description)
+    link(rel="canonical" href= href)
 
 mixin reason_item(src, title, text)
-	.b-reason__reasoncol
-		.b-reasoncol
-		img.b-reasoncol__ico(src=src)
-		p.b-reasoncol__title= title
-		p.b-reasoncol__text= text
+    .b-reason__reasoncol
+        .b-reasoncol
+        img.b-reasoncol__ico(src=src)
+        p.b-reasoncol__title= title
+        p.b-reasoncol__text= text
 
-mixin first-person(title_fp, text_fp1, text_fp2, button)
-	.wrap
-		h3.first-person__title= title_fp
-		p.first-person__text= text_fp1
-		p.first-person__text= text_fp2
-		form
-			button.b-formheader__btn(type="submit" name="formheader-btn")= button
+mixin input(type, placeholder)
+    input(type= type, placeholder= placeholder)
+
