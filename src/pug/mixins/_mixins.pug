@@ -22,7 +22,7 @@ mixin b-packet__packetitem(title, price, subtitle)
 			.b-packetitem__packetlist
 				ul.b-packetlist
 				each item in listpacket
-					li= item
+					li.b-packetlist__item= item
 mixin b-structlist__item(title, text)
 	li.b-structlist__item
 		p.b-structlist__title= title
@@ -31,16 +31,13 @@ mixin b-structlist__item(title, text)
 mixin input(type, placeholder)
 	input(type= type, placeholder= placeholder)
 
-mixin first-person(title_fp, text_fp1, text_fp2)
-	.wrap
-		h3.first-person__title= title_fp
-		p.first-person__text= text_fp1
-		p.first-person__text= text_fp2
-
 mixin content(text, image, name, profesion)
 	p.ecologist__feedback-text= text
 	p.ecologist__feedback-img
 		img(src= image)
 	p.ecologist__feedback-name= name
 	span.ecologists__feedback-proffesion= profesion
+
+mixin contact-us(type, placeholder, value)
+	input(type=type, placeholder=placeholder, value=value)
 
