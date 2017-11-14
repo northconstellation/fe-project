@@ -1,27 +1,17 @@
 include ../mixins/_mixins
+link(rel="stylesheet", href="css/style.min.css")
 doctype html
 block variables
 
 block head
     +head-meta(
         'Forest',
-        'our project',
-        'http://example.com'
+        'Our first fe project',
+        'https://northconstellation.github.io/fe-project/app/'
     )
 body
     block header
         include ../includes/_header
     block main
-        block first person
-            include ../includes/_first-person
-        block first person article
-        block important
-            include ../includes/_important
-        block ecologist
-            include ../includes/_ecologist
-        block wooddesign
-            include ../includes/_wooddesign
-        block contact us
-            include ../includes/_contact us
     block footer
         include ../includes/_footer
