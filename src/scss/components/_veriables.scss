@@ -1,0 +1,30 @@
+$font-size: 14px;
+$font-size-title: 36px;
+$color: #767272;
+$color-hover: #ff9c00;
+$text-transform: uppercase;
+$font-wieght: bold;
+$social-icons: url(img/sprite.png);
+$color-btn: #ffffff;
+$text-align: center;
+$font-size-feedback: 12px;
+$background: transparent;
+$error-color: #6ddeca;
+
+// @extend 
+.ecologist__feedback-img 
+	border-radius: 50%;
+	overflow: hidden;
+
+.input {
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+.footer-header {
+	color: #ffffff;
+}
+.btn {
+	border-color: #f27600;
+	color: #ffffff;
+}
