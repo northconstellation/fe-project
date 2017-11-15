@@ -27,4 +27,11 @@ mixin content(text, image, name, profesion)
 	span.ecologists__feedback-proffesion= profesion
 mixin contact-us(type, placeholder)
 	input(type=type, placeholder=placeholder)
+mixin b-tabstext(title, text, href, link)
+	p.b-tabstext__title= title
+	p.b-tabstext__text= text
+	.b-tabstext__loadbtn
+	.b-loadbtn
+		a.b-loadbtn__dtn(href=href)= link
+
 
