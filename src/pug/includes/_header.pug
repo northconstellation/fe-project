@@ -5,12 +5,12 @@ header
             .b-top__logo
                 .b-logo
                     img.b-logo__img(src="img/logo.png")
-            -var menu=[{href: 'Home', title: 'Home'}, {href:'About us', title: 'About us'}, {href:'Contacts', title: 'Contacts'}]
+            -var menu=[{href: 'Index', title: 'Home'}, {href:'insidepage', title: 'About us'}, {href:'blog', title: 'Blog'}]
             nav.b-headermenu
                 ul
                     each item in menu
                         li
-                            if item.href.toLowerCase() === currentPage
+                            if item.title.toLowerCase() === currentPage
                                 span.current-page= item.title
                             else
                                 a(href=item.href.toLowerCase().replace("\ ", "-")+".html")= item.title
