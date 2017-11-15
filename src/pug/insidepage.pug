@@ -1,6 +1,10 @@
 extends layouts/_layout.pug
 block variables
     -var currentPage='insidepage'
+block prepend head
+    +head-meta(
+    'Inside Page | Forest'
+    )
 block main
     include includes/_text-block
     include includes/_important

@@ -2,42 +2,29 @@ mixin head-meta(title, description, href)
 	title= title
 	meta(name="description" content= description)
 	link(rel="canonical" href= href)
-
 mixin reason_item(src, title, text)
 	.b-reason__reasoncol
 		.b-reasoncol
 		img.b-reasoncol__ico(src=src)
 		p.b-reasoncol__title= title
 		p.b-reasoncol__text= text
-
-mixin b-packet__packetitem(title, price, subtitle)
-	.b-packet__packetitem
-		.b-packetitem
-			p.b-packetitem__title= title
-			.b-packetitem__price
-				.b-price
-					p.b-price__num $
-						span= price
-					p.b-price__text= subtitle
-			.b-packetitem__packetlist
-				ul.b-packetlist
-				each item in listpacket
-					li.b-packetlist__item= item
+mixin b-packet__item(title, price, subtitle)
+	p.b-packetitem__title= title
+	.b-packetitem__price
+		.b-price
+			p.b-price__num $
+				span= price
+			p.b-price__text= subtitle
 mixin b-structlist__item(title, text)
 	li.b-structlist__item
 		p.b-structlist__title= title
 		span.b-structlist__text= text
-
-mixin input(type, placeholder)
-	input(type= type, placeholder= placeholder)
-
 mixin content(text, image, name, profesion)
 	p.ecologist__feedback-text= text
 	p.ecologist__feedback-img
 		img(src= image)
 	p.ecologist__feedback-name= name
 	span.ecologists__feedback-proffesion= profesion
-
-mixin contact-us(type, placeholder, value)
-	input(type=type, placeholder=placeholder, value=value)
+mixin contact-us(type, placeholder)
+	input(type=type, placeholder=placeholder)
 

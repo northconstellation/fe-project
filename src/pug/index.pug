@@ -58,13 +58,23 @@ block main
             .b-pricingoption__subtitle For a broader coverage related to this topic of trees.
             .b-pricingoption__packet
                 .b-packet
-                    +b-packet__packetitem ("Basic", "0", "Free for life")
-                    -var listpacket = ["Canopy", "Clearcutting", "Close to nature", "forestry",  "Cloud forest", "Chase"]
-                    +b-packet__packetitem ("Professional", "19", "Monthly payment")
-                    -var listpacket = ["Dendrometry", "Ecological succession", "Succession", "Forest dynamics",  "Forest management", "Forest migration"]
-                    +b-packet__packetitem ("Enterprice", "70", "Monthly payment")
-                    -var listpacket = ["Definition", "Etymology", "Succession", "Evolution",  "Ecology", "Components"]
-
+                    .b-packet__packetitem
+                        .b-packetitem
+                            +b-packet__item ("Basic", "0", "Free for life")
+                            -var listpacket= ["Canopy", "Clearcutting", "Close to nature", "forestry",  "Cloud forest", "Chase"]
+                            ul.b-packetlist
+                                each item in listpacket
+                                    li.b-packetlist__item= item
+                            +b-packet__item ("Professional", "19", "Monthly payment")
+                            -var listpacket= ["Dendrometry", "Ecological succession", "Succession", "Forest dynamics",  "Forest management", "Forest migration"]
+                            ul.b-packetlist
+                                each item in listpacket
+                                    li.b-packetlist__item= item
+                            +b-packet__item ("Enterprice", "70", "Monthly payment")
+                            -var listpacket= ["Definition", "Etymology", "Succession", "Evolution",  "Ecology", "Components"]
+                            ul.b-packetlist
+                                each item in listpacket
+                                    li.b-packetlist__item= item
     include includes/_ecologist
     include includes/_wooddesign
     include includes/_contact_us
