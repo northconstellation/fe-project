@@ -3,6 +3,7 @@
 <meta name="description" content="Our first fe project"/>
 <link rel="canonical" href="https://northconstellation.github.io/fe-project/app/"/>
 <link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/sprite.css">
 <body>
 	<header>
 		<div class="b-header__top">
@@ -53,9 +54,11 @@
 		<div class="b-tabs content_middle">
 			<div class="b-tabs__blocktext">
 				<div class="b-blocktext">
-					<li class="tab-item"><a class="tab 1" href="#tab-1"><span>TAB 1</span></a></li>
-					<li class="tab-item active"><a class="tab 2" href="#tab-2"><span>TAB 2</span></a></li>
-					<li class="tab-item"><a class="tab 3" href="#tab-3"><span>TAB 3</span></a></li>
+					<div class="b-blocktext__list">
+						<li class="tab-item"><a class="tab 1" href="#tab-1"><span>TAB 1</span></a></li>
+						<li class="tab-item active"><a class="tab 2" href="#tab-2"><span>TAB 2</span></a></li>
+						<li class="tab-item"><a class="tab 3" href="#tab-3"><span>TAB 3</span></a></li>
+					</div>
 					<div class="tab-contant_container">
 						<div class="tab" id="tab-1">
 							<div class="b-blocktext__tabstext">
@@ -245,17 +248,27 @@
 		</form>
 	</div>
 	<div class="contact-us">
-		<h2>CONTACT US</h2>
-		<p>For a broader coverage related to this topic.</p>
+		<h2 class="contact__header">CONTACT US</h2>
+		<p class="contact-us__text">For a broader coverage related to this topic.</p>
 		<form>
-				<input type="text" placeholder="Name">
-				<input type="email" placeholder="Email">
-				<input type="text" placeholder="Message">
-				<input type="text" placeholder="Message">
-			<input type="submit" value="Send Message">
+			<div class="inputs">
+				<div class="first">
+						<input type="text" placeholder="Name">
+						<input type="email" placeholder="Email">
+						<input type="text" placeholder="Message">
+				</div>
+				<div class="last">
+						<input type="text" placeholder="Message">
+				</div>
+			</div>
+			<div class="submit">
+				<input type="submit" value="Send Message">
+			</div>
 		</form>
 	</div>
-	<div class="sight-footer"><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a>
-		<p>2011 Company work</p>
+	<div class="sight-footer">
+		<div class="footer__links"><a class="icon-soc_fb" href="error.html"></a><a class="icon-soc_feed" href="error.html"></a><a class="icon-soc_google" href="error.html"></a><a class="icon-soc_in" href="error.html"></a><a class="icon-soc_stumb" href="error.html"></a><a class="icon-soc_tw" href="error.html"></a><a class="icon-soc_cirde" href="error.html"></a>
+		</div>
+		<p class="footer--text">2011 Company work</p>
 	</div>
 </body>

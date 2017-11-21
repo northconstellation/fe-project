@@ -6,16 +6,17 @@ block main
         .b-tabs.content_middle
             .b-tabs__blocktext
                 .b-blocktext
-                    - var fitures = ["Tab 1", "Tab 2", "Tab 3"]
-                    each item, index in fitures
-                        if index == 1
-                            li.tab-item.active
-                                a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
-                                    span= item.toUpperCase()
-                        else
-                            li.tab-item
-                                a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
-                                    span= item.toUpperCase()
+                    .b-blocktext__list
+                        - var fitures = ["Tab 1", "Tab 2", "Tab 3"]
+                        each item, index in fitures
+                            if index == 1
+                                li.tab-item.active
+                                    a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
+                                        span= item.toUpperCase()
+                            else
+                                li.tab-item
+                                    a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
+                                        span= item.toUpperCase()
                     .tab-contant_container
                         each item in fitures
                             -var link = item.toLowerCase().replace(/\s/ig, '-')
