@@ -1,7 +1,7 @@
 include ../mixins/_mixins
 header
     .b-header__top
-        .b-top
+        .b-top.content_middlemenu
             .b-top__logo
                 .b-logo
                     img.b-logo__img(src="img/logo.png")
@@ -15,7 +15,7 @@ header
                             else
                                 a(href=item.href.toLowerCase().replace("\ ", "-")+".html")= item.title
     .b-header__inform
-        .b-inform
+        .b-inform.content_middle
             .b-inform
                 .b-inform__about
                     .b-about

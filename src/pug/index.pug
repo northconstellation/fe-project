@@ -3,7 +3,7 @@ block variables
     -var currentPage='home'
 block main
     .b-wrap__tabs
-        .b-tabs
+        .b-tabs.content_middle
             .b-tabs__blocktext
                 .b-blocktext
                     - var fitures = ["Tab 1", "Tab 2", "Tab 3"]
@@ -41,7 +41,7 @@ block main
                 .b-blockimg
                     img.b-blockimg__img(src="img/about_pic1.jpg")
     .b-wrap__structure
-        .b-structure
+        .b-structure.content_middle
             .b-tabs__blockimg
                 .b-blockimg
                     img.b-blockimg__img(src="img/about_pic2.jpg")
@@ -55,7 +55,7 @@ block main
                             +b-structlist__item("Understory", "is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.")
                             +b-structlist__item("Canopy", "Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy")
     .b-wrap__solution
-        .b-solution
+        .b-solution.content_middle
             .b-tabs__blocktext
                 .b-blocktext
                     .b-blocktext__title Long forest evolution
@@ -68,7 +68,7 @@ block main
 
     include includes/_important
     .b-wrap__pricingoption
-        .b-pricingoption
+        .b-pricingoption.content_middle
             h2.b-pricingoption__title pricing options
             .b-blocktext__line
             .b-pricingoption__subtitle For a broader coverage related to this topic of trees.

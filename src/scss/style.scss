@@ -15,37 +15,41 @@
 //Header
 @import "components/_header";
 
+//Important
+@import "components/_important";
 
-//
-//@mixin btn($background, $color, $font-size){
-//  display: inline-block;
-//  width: 200px;
-//  height: 70px;
-//  line-height: 70px;
-//  background-color: $background ;
-//  color: $color;
-//  font-size: $font-size;
-//  padding:2*$font-size;
-//}
+body{
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
+}
 
-//body{
-//  font-family: 'HelveticaNeueCyr';
-//  font-weight: 300;
-//}
-//
-//.b-formheader__btn {
-//  @include btn(#00ff00, #000000, 18px);
-//  font-family: 'HelveticaNeueCyr';
-//}
-//
-//.b-loadbtn__dtn {
-//  @include btn(#0000ff, #ffffff, 18px);
-//}
-//
-//form %red-btn {
-//  background-color: #ff0000;
-//}
-//
-//.b-formheader__btn {
-//  @extend %red-btn;
-//}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.content_middle {
+  max-width: 980px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.content_middlemenu{
+  @extend.content_middle;
+  max-width: 1200px;
+}
