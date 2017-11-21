@@ -1,0 +1,30 @@
+
+.b-formheader input[type="submit"] {
+  @include btn(160px, 40px, 14px, $primary-color, $primary-color-light, $border-box-none, $font-weight-bold, $text-notransform);
+  font-family: 'HelveticaNeueCyr';
+}
+
+.b-loadbtn__dtn{
+  @include btn(160px, 40px, 14px, $primary-color, $primary-color-light, $border-box-none, $font-weight-bold, $text-notransform);
+  font-family: 'HelveticaNeueCyr';
+}
+
+.contact-us form input[type="submit"] {
+  @include btn(160px, 40px, 14px, $primary-color, $primary-color-light, $border-box-none, $font-weight-bold, $text-notransform);
+  font-family: 'HelveticaNeueCyr';
+}
+
+.b-btn__load {
+  @include btn(160px, 40px, 18px, $primary-color-trasparent, $primary-color-light, $border-box-white, $font-weight-light, $text-upper);
+  font-family: 'HelveticaNeueCyr';
+}
+
+.btn__download--wood-design {
+  @include btn(160px, 40px, 18px, $primary-color-trasparent, $primary-color-light, $border-box-white, $font-weight-light, $text-notransform);
+  font-family: 'HelveticaNeueCyr';
+}
+
+.btn{
+  @include btn(160px, 40px, 14px, $primary-color, $primary-color-light, $border-box-none, $font-weight-bold, $text-notransform);
+  font-family: 'HelveticaNeueCyr';
+}
