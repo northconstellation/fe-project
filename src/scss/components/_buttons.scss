@@ -1,0 +1,25 @@
+.btn{
+  @include btn(160px, 40px, 14px, $primary-color, $primary-color-light, $border-box-none, $font-weight-bold);
+}
+
+.b-loadbtn__dtn{
+ @extend.btn;
+}
+
+.b-formheader input[type="submit"] {
+  @extend.btn;
+}
+
+.contact-us form input[type="submit"] {
+  @extend.btn;
+}
+.btn__download--wood-design {
+  @include btn(160px, 40px, 18px, $primary-color-trasparent, $primary-color-light, $border-box-white, $font-weight-light);
+}
+.b-btn__load {
+  @extend.btn__download--wood-design;
+  text-transform: uppercase;
+ }
+
+
+

@@ -1,0 +1,18 @@
+.b-header__top {
+  background: $background-dark;
+  @extend.clearfix;
+
+}
+.b-header__inform {
+  background-image: $background-header;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//.b-top__logo{
+//  display: flex;
+//}
+//
+//.b-headermenu {
+//  display: flex;
+//}

@@ -1,5 +1,4 @@
 include ../mixins/_mixins
-link(rel="stylesheet", href="css/style.min.css")
 doctype html
 block variables
 
@@ -9,6 +8,8 @@ block head
         'Our first fe project',
         'https://northconstellation.github.io/fe-project/app/'
     )
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.min.css")
 body
     block header
         include ../includes/_header

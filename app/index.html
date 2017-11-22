@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<title>FOREST </title>
-<meta name="description" content="our project"/>
-<link rel="canonical" href="http://example.com"/>
+<title>Forest</title>
+<meta name="description" content="Our first fe project"/>
+<link rel="canonical" href="https://northconstellation.github.io/fe-project/app/"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.min.css">
 <body>
 	<header>
 		<div class="b-header__top">
-			<div class="b-top">
+			<div class="b-top content_middlemenu">
 				<div class="b-top__logo">
 					<div class="b-logo"><img class="b-logo__img" src="img/logo.png"></div>
-					<nav class="b-headermenu">
-						<ul>
-							<li><span class="carrent-page">Home</span>
-							</li>
-							<li><a href="contacts">Contact us</a>
-							</li>
-							<li><a href="about-us">About us</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
+				<nav class="b-headermenu">
+					<ul>
+						<li><span class="current-page">Home</span>
+						</li>
+						<li><a href="insidepage.html">About us</a>
+						</li>
+						<li><a href="blog.html">Blog</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 		<div class="b-header__inform">
-			<div class="b-inform">
+			<div class="b-inform content_middle">
 				<div class="b-inform">
 					<div class="b-inform__about">
 						<div class="b-about"><img class="b-about__img" src="img/logo.png">
@@ -39,9 +41,9 @@
 								<p class="b-formtitle">pre-alpha</p>
 							</div>
 							<input class="b-formheader__input" type="text" placeholder="name">
-							<input class="b-formheader__input" type="email" placeholder="email">
-							<textarea class="b-formheader__input" type="text" placeholder="message"></textarea>
-							<button class="b-formheader__btn" type="submit" name="formheader-btn">Get started</button>
+							<input class="b-formheader__input" type="email" placeholder="Email">
+							<input class="b-formheader__input" type="text" placeholder="Message">
+							<input class="b-formheader__input" type="submit">
 						</form>
 					</div>
 				</div>
@@ -49,28 +51,41 @@
 		</div>
 	</header>
 	<div class="b-wrap__tabs">
-		<div class="b-tabs">
+		<div class="b-tabs content_middle">
 			<div class="b-tabs__blocktext">
 				<div class="b-blocktext">
-					<div class="b-blocktext__tabsbtn">
-						<div class="b-tabsbtn">
-							<div class="b-tabsbtn__list">
-								<ul class="b-list">
-									<li class="b-list__item">tab1</li>
-									<li class="b-list__item">tab2</li>
-									<li class="b-list__item">tab3</li>
-								</ul>
+					<li class="tab-item"><a class="tab 1" href="#tab-1"><span>TAB 1</span></a></li>
+					<li class="tab-item active"><a class="tab 2" href="#tab-2"><span>TAB 2</span></a></li>
+					<li class="tab-item"><a class="tab 3" href="#tab-3"><span>TAB 3</span></a></li>
+					<div class="tab-contant_container">
+						<div class="tab" id="tab-1">
+							<div class="b-blocktext__tabstext">
+								<div class="b-tabstext">
+										<p class="b-tabstext__title">The Forest is a first-person open</p>
+										<p class="b-tabstext__text">In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.</p>
+										<div class="b-tabstext__loadbtn"></div>
+										<div class="b-loadbtn"><a class="b-loadbtn__dtn" href="error.html">Download</a></div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="b-blocktext__tabstext">
-						<div class="b-tabstext">
-							<p class="b-tabstext__title">The Forest is a first-person open</p>
-							<p class="b-tabstext__text">In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.</p>
-							<p class="b-tabstext__text"> Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.</p>
-							<div class="b-tabstext__loadbtn">
-								<div class="b-loadbtn"></div>
-								<button class="b-loadbtn__dtn">Download</button>
+						<div class="tab" id="tab-2">
+							<div class="b-blocktext__tabstext">
+								<div class="b-tabstext">
+										<p class="b-tabstext__title">The Forest is a first-person open</p>
+										<p class="b-tabstext__text">In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.</p>
+										<div class="b-tabstext__loadbtn"></div>
+										<div class="b-loadbtn"><a class="b-loadbtn__dtn" href="error.html">Download</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="tab" id="tab-3">
+							<div class="b-blocktext__tabstext">
+								<div class="b-tabstext">
+										<p class="b-tabstext__title">The Forest is a first-person open</p>
+										<p class="b-tabstext__text">In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.</p>
+										<div class="b-tabstext__loadbtn"></div>
+										<div class="b-loadbtn"><a class="b-loadbtn__dtn" href="error.html">Download</a></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -82,7 +97,7 @@
 		</div>
 	</div>
 	<div class="b-wrap__structure">
-		<div class="b-structure">
+		<div class="b-structure content_middle">
 			<div class="b-tabs__blockimg">
 				<div class="b-blockimg"><img class="b-blockimg__img" src="img/about_pic2.jpg"></div>
 			</div>
@@ -93,12 +108,12 @@
 					<div class="b-blocktext__text">Bridges may be classified by how the forces of tension, compression, bending, torsion and shear are distributed through their structure.</div>
 					<div class="b-blocktext__structlist">
 						<ul class="b-structlist">
-							<li class="b-structlist__item">
-								<p class="b-structlist__title">Understory<span class="b-structlist__text">is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.</span></p>
-							</li>
-							<li class="b-structlist__item">
-								<p class="b-structlist__title">Canopy<span class="b-structlist__text">Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy</span></p>
-							</li>
+								<li class="b-structlist__item">
+									<p class="b-structlist__title">Understory</p><span class="b-structlist__text">is made up of bushes, shrubs, and young trees that are adapted to living in the shades of the canopy.</span>
+								</li>
+								<li class="b-structlist__item">
+									<p class="b-structlist__title">Canopy</p><span class="b-structlist__text">Exists in the tropical rain forest and is composed of a few scattered trees that tower over the canopy</span>
+								</li>
 						</ul>
 					</div>
 				</div>
@@ -106,7 +121,7 @@
 		</div>
 	</div>
 	<div class="b-wrap__solution">
-		<div class="b-solution">
+		<div class="b-solution content_middle">
 			<div class="b-tabs__blocktext">
 				<div class="b-blocktext">
 					<div class="b-blocktext__title">Long forest evolution</div>
@@ -121,7 +136,7 @@
 		</div>
 	</div>
 	<div class="b-wrap__important">
-		<div class="b-important">
+		<div class="b-important content_middle">
 			<h2 class="important__title">why forest is so important</h2>
 			<div class="b-important__line"></div>
 			<div class="b-important__subtitle">This article is about a community of trees or other woody vegetation.</div>
@@ -149,7 +164,7 @@
 		</div>
 	</div>
 	<div class="b-wrap__pricingoption">
-		<div class="b-pricingoption">
+		<div class="b-pricingoption content_middle">
 			<h2 class="b-pricingoption__title">pricing options</h2>
 			<div class="b-blocktext__line"></div>
 			<div class="b-pricingoption__subtitle">For a broader coverage related to this topic of trees.</div>
@@ -157,69 +172,51 @@
 				<div class="b-packet">
 					<div class="b-packet__packetitem">
 						<div class="b-packetitem">
-							<div class="b-packetitem__title">
-								<p>Basic</p>
-							</div>
-							<div class="b-packetitem__price">
-								<div class="b-price">
-									<p class="b-price__num">$<span>0</span></p>
-									<p class="b-price__text b-price__textitalic">Free for life</p>
+								<p class="b-packetitem__title">Basic</p>
+								<div class="b-packetitem__price">
+									<div class="b-price">
+										<p class="b-price__num">$<span>0</span></p>
+										<p class="b-price__text">Free for life</p>
+									</div>
 								</div>
-							</div>
-							<div class="b-packetitem__packetlist">
-								<ul class="b-packetlist">
-									<li class="b-packetlist__item">Canopy</li>
-									<li class="b-packetlist__item">Clearcutting</li>
-									<li class="b-packetlist__item">Close to nature</li>
-									<li class="b-packetlist__item">forestry</li>
-									<li class="b-packetlist__item">Cloud forest</li>
-									<li class="b-packetlist__item">Chase</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="b-packet__packetitem">
-						<div class="b-packetitem">
-							<div class="b-packetitem__title">
-								<p>Professional</p>
-							</div>
-							<div class="b-packetitem__price packet__middle">
-								<div class="b-price">
-									<p class="b-price__num">$<span>19</span></p>
-									<p class="b-price__text">Monthly payment</p>
+							<ul class="b-packetlist">
+								<li class="b-packetlist__item">Canopy</li>
+								<li class="b-packetlist__item">Clearcutting</li>
+								<li class="b-packetlist__item">Close to nature</li>
+								<li class="b-packetlist__item">forestry</li>
+								<li class="b-packetlist__item">Cloud forest</li>
+								<li class="b-packetlist__item">Chase</li>
+							</ul>
+								<p class="b-packetitem__title">Professional</p>
+								<div class="b-packetitem__price">
+									<div class="b-price">
+										<p class="b-price__num">$<span>19</span></p>
+										<p class="b-price__text">Monthly payment</p>
+									</div>
 								</div>
-							</div>
-							<div class="b-packetitem__packetlist">
-								<ul class="b-packetlist">
-									<li class="b-packetlist__item">Dendrometry</li>
-									<li class="b-packetlist__item">Ecological succession</li>
-									<li class="b-packetlist__item">Forest dynamics</li>
-									<li class="b-packetlist__item">Forest management</li>
-									<li class="b-packetlist__item">Forest migration</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="b-packet__packetitem">
-						<div class="b-packetitem">
-							<div class="b-packetitem__title">
-								<p>Enterprice</p>
-							</div>
-							<div class="b-packetitem__price">
-								<div class="b-price">
-									<p class="b-price__num">$<span>70</span></p>
-									<p class="b-price__text">Monthly payment</p>
+							<ul class="b-packetlist">
+								<li class="b-packetlist__item">Dendrometry</li>
+								<li class="b-packetlist__item">Ecological succession</li>
+								<li class="b-packetlist__item">Succession</li>
+								<li class="b-packetlist__item">Forest dynamics</li>
+								<li class="b-packetlist__item">Forest management</li>
+								<li class="b-packetlist__item">Forest migration</li>
+							</ul>
+								<p class="b-packetitem__title">Enterprice</p>
+								<div class="b-packetitem__price">
+									<div class="b-price">
+										<p class="b-price__num">$<span>70</span></p>
+										<p class="b-price__text">Monthly payment</p>
+									</div>
 								</div>
-							</div>
-							<div class="b-packetitem__packetlist">
-								<ul class="b-packetlist">
-									<li class="b-packetlist__item">Definition</li>
-									<li class="b-packetlist__item">Etymology</li>
-									<li class="b-packetlist__item">Evolution</li>
-									<li class="b-packetlist__item">Ecology</li>
-									<li class="b-packetlist__item">Components</li>
-								</ul>
-							</div>
+							<ul class="b-packetlist">
+								<li class="b-packetlist__item">Definition</li>
+								<li class="b-packetlist__item">Etymology</li>
+								<li class="b-packetlist__item">Succession</li>
+								<li class="b-packetlist__item">Evolution</li>
+								<li class="b-packetlist__item">Ecology</li>
+								<li class="b-packetlist__item">Components</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -229,43 +226,48 @@
 	<div class="wrap">
 		<h2 class="block__title block__title--ecologist">What our ecologists are saying</h2>
 		<p class="block__watchword block__watchword--ecologist">A broader coverage related to this top</p>
-		<div class="ecologist__feedback-wrap">
-			<!--mixin content(text, image, name, profesion)
-			//p(class= "ecologist__feedback-text")= text
-			//img= image
-			//p= name
-			//span= profesion
-			-->
-			<!--+text.Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition)-->
-			<p class="ecologist__feedback-text">Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition</p>
-			<p class="ecologist__feedback-img"><img src="img/ecologist_photo1.png"></p>
-			<p class="ecologist__feedback-name">Ann klot</p>
-			<p class="ecologist__feedback-text">Administrative definitions are based primarily upon the legal designations of land, and commonly bear no relationship to the vegetation growing on the land.</p>
-			<p class="ecologist__feedback-img"><img src="img/ecologist_photo2.png"></p>
-			<p class="ecologist__feedback-name">John Lino</p>
-			<p class="ecologist__feedback-text">A forest is made up of many layers. Starting from the ground level and moving up, the main layers of all forest types are the forest floor.</p>
-			<p class="ecologist__feedback-img"><img src="img/ecologist_photo3.png"></p>
-			<p class="ecologist__feedback-name">John Lino</p>
+		<div class="ecologist__feedback">
+				<div class="ecologist__feedback--wrap">
+					<div class="ecologist__feedback-text--wrap">
+						<p class="ecologist__feedback-text">Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition</p>
+					</div>
+					<p class="ecologist__feedback-img"><img src="img/ecologist_photo1.png"></p>
+					<p class="ecologist__feedback-name">Ann klot</p><span class="ecologists__feedback-proffesion">Ecologist</span>
+				</div>
+				<div class="ecologist__feedback--wrap">
+					<div class="ecologist__feedback-text--wrap">
+						<p class="ecologist__feedback-text">Administrative definitions are based primarily upon the legal designations of land, and commonly bear no relationship to the vegetation growing on the land.</p>
+					</div>
+					<p class="ecologist__feedback-img"><img src="img/ecologist_photo2.png"></p>
+					<p class="ecologist__feedback-name">John Lino</p><span class="ecologists__feedback-proffesion">Ecologist</span>
+				</div>
+				<div class="ecologist__feedback--wrap">
+					<div class="ecologist__feedback-text--wrap">
+						<p class="ecologist__feedback-text">A forest is made up of many layers. Starting from the ground level and moving up, the main layers of all forest types are the forest floor.</p>
+					</div>
+					<p class="ecologist__feedback-img"><img src="img/ecologist_photo3.png"></p>
+					<p class="ecologist__feedback-name">John Lino</p><span class="ecologists__feedback-proffesion">Ecologist</span>
+				</div>
 		</div>
 	</div>
-	<!--бекграунд задається через цсс-->
-	<div class="wrap">
-		<h2 class="block__title block__title--">Stylish wood design</h2>
-		<p class="block__watchword block__watchword--wood-design">Forests can be classified in different ways and to different degrees of specificity.</p>
-		<button class="btn__download btn__download--wood-design">Download</button>
-	</div>
+	<section class="wood-design">
+		<div class="wrap">
+			<h2 class="block__title block__title--wood-design">Stylish wood design</h2>
+			<p class="block__watchword block__watchword--wood-design">Forests can be classified in different ways and to different degrees of specificity.</p><a class="btn__download btn__download--wood-design">Download</a>
+		</div>
+	</section>
 	<div class="contact-us">
 		<h2>CONTACT US</h2>
 		<p>For a broader coverage related to this topic.</p>
 		<form>
-			<input type="text" placeholder="Name">
-			<input type="email" placeholder="Email">
-			<input type="text" placeholder="Message">
-			<input type="text" placeholder="Message">
+				<input type="text" placeholder="Name">
+				<input type="email" placeholder="Email">
+				<input type="text" placeholder="Message">
+				<input type="text" placeholder="Message">
 			<input type="submit" value="Send Message">
 		</form>
 	</div>
-	<div class="sight-footer"><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
-		<p>2015 Company work</p>
+	<div class="sight-footer"><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a><a href="error.html"></a>
+		<p>2011 Company work</p>
 	</div>
 </body>

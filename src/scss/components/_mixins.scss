@@ -1,0 +1,14 @@
+@mixin btn($width, $height, $font-size, $bg-color, $color, $border, $text-style){
+  display: inline-block;
+  width: $width;
+  height: $height;
+  line-height:$height;
+  background-color: $bg-color;
+  color: $color;
+  font-size: $font-size;
+  border:$border;
+  font-weight: $text-style;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
