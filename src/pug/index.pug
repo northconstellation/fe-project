@@ -6,16 +6,17 @@ block main
         .b-tabs.content_middle
             .b-tabs__blocktext
                 .b-blocktext
-                    - var fitures = ["Tab 1", "Tab 2", "Tab 3"]
-                    each item, index in fitures
-                        if index == 1
-                            li.tab-item.active
-                                a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
-                                    span= item.toUpperCase()
-                        else
-                            li.tab-item
-                                a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
-                                    span= item.toUpperCase()
+                    ul.b-blockitem
+                        - var fitures = ["Tab 1", "Tab 2", "Tab 3"]
+                        each item, index in fitures
+                            if index == 0
+                                li.tab-item.active
+                                    a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
+                                        span= item.toUpperCase()
+                            else
+                                li.tab-item
+                                    a(href="#" + item.toLowerCase().replace(/\s/ig, '-'), class= item.toLowerCase())
+                                        span= item.toUpperCase()
                     .tab-contant_container
                         each item in fitures
                             -var link = item.toLowerCase().replace(/\s/ig, '-')
@@ -24,19 +25,19 @@ block main
                                     when "tab-1"
                                         .b-blocktext__tabstext
                                             .b-tabstext
-                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
+                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.", "Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
                                     when "tab-2"
-                                        .b-blocktext__tabstext
+                                        .b-blocktext__tabstext.block__nodisplay
                                             .b-tabstext
-                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
+                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.", "Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
                                     when "tab-3"
-                                        .b-blocktext__tabstext
+                                        .b-blocktext__tabstext.block__nodisplay
                                             .b-tabstext
-                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
+                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.", "Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
                                     default
-                                        .b-blocktext__tabstext
+                                        .b-blocktext__tabstext.block__nodisplay
                                             .b-tabstext
-                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools. Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
+                                                +b-tabstext("The Forest is a first-person open", "In The Forest, the player must survive on a forested island after a plane crash during which mutants are seen taking the player's son away. The player survives by creating shelter, weapons, and other survival tools.", "Inhabiting the island, along with various woodland creatures, are a tribe of nocturnal, cannibalistic mutants who dwell in deep caves beneath the island.", "error.html", "Download")
             .b-tabs__blockimg
                 .b-blockimg
                     img.b-blockimg__img(src="img/about_pic1.jpg")
@@ -81,11 +82,15 @@ block main
                             ul.b-packetlist
                                 each item in listpacket
                                     li.b-packetlist__item= item
+                    .b-packet__packetitem
+                        .b-packetitem
                             +b-packet__item ("Professional", "19", "Monthly payment")
                             -var listpacket= ["Dendrometry", "Ecological succession", "Succession", "Forest dynamics",  "Forest management", "Forest migration"]
-                            ul.b-packetlist
+                            ul.b-packetlist.packetlist__middle
                                 each item in listpacket
                                     li.b-packetlist__item= item
+                    .b-packet__packetitem
+                        .b-packetitem
                             +b-packet__item ("Enterprice", "70", "Monthly payment")
                             -var listpacket= ["Definition", "Etymology", "Succession", "Evolution",  "Ecology", "Components"]
                             ul.b-packetlist

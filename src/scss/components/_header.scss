@@ -1,18 +1,124 @@
 .b-header__top {
   background: $background-dark;
-  @extend.clearfix;
+  padding: 30px 0 25px;
+}
+.b-top {
+  @extend.b-flex__spacebetween;
+  .b-top__logo{
+    @include b-block (column, 57%);
+    margin: 0 2% 0 0;
+  }
+  .b-headermenu {
+    @include b-block (column, 40%);
+    text-align: right;
+  }
+}
+
+.b-headermenu ul li {
+  display: inline-block;
+  margin: 0 0 0 30px;
+  a, span{
+    font-size:$font-size-small;
+    color:$primary-color-menu;
+    font-weight: normal;
+    font-style: normal;
+    text-transform:$text-upper;
+    text-decoration: none;
+  }
+  span{
+    color:$primary-color !important;
+  }
+}
+
+.b-headermenu ul li:first-child {
+  margin: 0;
 
 }
+
 .b-header__inform {
   background-image: $background-header;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: $primary-padding-block;
+  text-align: left;
 }
 
-//.b-top__logo{
-//  display: flex;
-//}
-//
-//.b-headermenu {
-//  display: flex;
-//}
+.b-inform {
+  @extend.b-flex__spacebetween;
+  .b-inform__about{
+    @include b-block (column, 50%);
+    margin: 0 2% 0 0;
+  }
+  .b-inform__formheader {
+    @include b-block (column, auto);
+    text-align: right;
+  }
+  .b-about__slogan {
+    font-size:$font-size-headertitle;
+    color:$primary-color-light;
+    font-weight: normal;
+    font-style: normal;
+    text-transform:$text-upper;
+    margin: 20px 0 0 0;
+  }
+  .b-about__text {
+    @extend.b-small__text;
+    color: $primary-color-light !important;
+    line-height: 1.5;
+  }
+  .b-about__line {
+    @extend.b-title__line;
+    background: $primary-color-light !important;
+    margin-left: 0 !important;
+    width: 17% !important;
+  }
+
+  .b-about__btn {
+    margin: 40px 0 0 0;
+  }
+
+  .b-form{
+    padding: 15px 20px;
+    .b-formheader__input {
+      display: block;
+      padding: 22px 0 0;
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid #dfdec7;
+      background: $primary-color-trasparent;
+
+    }
+      input::-webkit-input-placeholder {color:#cfcfcf;}
+      input::-moz-placeholder          {color:#cfcfcf;}/* Firefox 19+ */
+      input:-moz-placeholder           {color:#cfcfcf;}/* Firefox 18- */
+      input:-ms-input-placeholder      {color:#cfcfcf;}
+    input[type="submit"]{
+      padding:0;
+      background: $primary-color !important;
+      border-bottom: none;
+      margin: 40px 0 0 0;
+    }
+  }
+
+  .b-formheader__formtitle{
+    background: #dfdec8;
+    border-radius: 3px;
+    padding: 10px 0;
+  }
+  .b-formtitle {
+    font-size: 14px;
+    color: #575050;
+    text-align: center;
+    font-weight: normal;
+    & span{
+      color: $primary-color;
+    }
+  }
+
+  .b-formheader {
+    width: 240px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #f8fbd1;
+  }
+}

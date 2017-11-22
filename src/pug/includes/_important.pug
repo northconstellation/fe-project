@@ -1,12 +1,11 @@
 include ../mixins/_mixins
 .b-wrap__important
     .b-important.content_middle
-        h2.important__title why forest is so important
+        h2.b-important__title why forest is so important
         .b-important__line
         .b-important__subtitle This article is about a community of trees or other woody vegetation.
         .b-important__reason
             .b-reason
-                .b-reason__reasoncol
-                    +reason_item ("img/important_ico1.png", "Animals home", "Forests account for 75% of the gross primary productivity of the Earth's biosphere, and  human activity.")
-                    +reason_item ("img/important_ico2.png", "Radioactivity filter", "Forests are often home to many animal and plant species, and biomass per unit vegetation communities.")
-                    +reason_item ("img/important_ico3.png", "A source of oxygen", "Forest ecosystems can be found in all regions capable of sustaining tree growth, where natural fire.")
+                +reason_item ( 1, "Animals home", "Forests account for 75% of the gross primary productivity of the Earth's biosphere, and  human activity.")
+                +reason_item ( 2, "Radioactivity filter", "Forests are often home to many animal and plant species, and biomass per unit vegetation communities.")
+                +reason_item ( 3, "A source of oxygen", "Forest ecosystems can be found in all regions capable of sustaining tree growth, where natural fire.")

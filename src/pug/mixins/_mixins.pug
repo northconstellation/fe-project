@@ -2,12 +2,12 @@ mixin head-meta(title, description, href)
 	title= title
 	meta(name="description" content= description)
 	link(rel="canonical" href= href)
-mixin reason_item(src, title, text)
+mixin reason_item(number, title, text)
 	.b-reason__reasoncol
 		.b-reasoncol
-		img.b-reasoncol__ico(src=src)
-		p.b-reasoncol__title= title
-		p.b-reasoncol__text= text
+			div(class=`icon-important_ico${number}`)
+			p.b-reasoncol__title= title
+			p.b-reasoncol__text= text
 mixin b-packet__item(title, price, subtitle)
 	p.b-packetitem__title= title
 	.b-packetitem__price
@@ -27,8 +27,9 @@ mixin content(text, image, name, profesion)
 	span.ecologists__feedback-proffesion= profesion
 mixin contact-us(type, placeholder)
 	input(type=type, placeholder=placeholder)
-mixin b-tabstext(title, text, href, link)
+mixin b-tabstext(title, text, text, href, link)
 	p.b-tabstext__title= title
+	p.b-tabstext__text= text
 	p.b-tabstext__text= text
 	.b-tabstext__loadbtn
 	.b-loadbtn

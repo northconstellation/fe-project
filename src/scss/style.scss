@@ -15,8 +15,20 @@
 //Header
 @import "components/_header";
 
+//tabs
+@import "components/_tabs";
+//Structure
+@import "components/_structure";
+
+//solution
+@import "components/_solution";
+
 //Important
 @import "components/_important";
+
+//Pricingoption
+@import "components/_pricingoption";
+
 
 body{
   font-family: 'HelveticaNeueCyr';
@@ -52,4 +64,20 @@ ul {
 .content_middlemenu{
   @extend.content_middle;
   max-width: 1200px;
+}
+
+.b-block__title {
+  @include  b-block__title ($font-size-title, $font-weight-light, $primary-color-black, $text-upper);
+}
+
+.b-block__subtitle {
+  @include  b-block__subtitle ($font-size-small, $font-weight-light, $primary-color-black, $margin-subtitle);
+}
+
+.b-title__line {
+  @include b-title__line(1px, $primary-color, $margin-titleline, 7%)
+}
+
+.block__nodisplay {
+  display: none;
 }
