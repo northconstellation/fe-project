@@ -18,11 +18,12 @@ gulp.task('sprite', function() {
         gulp.src('./src/img/sprite/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
-                cssName: 'sprite.css',
+                cssName: 'sprite.scss',
+                padding:16
             }));
 
     spriteData.img.pipe(gulp.dest('./app/img/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('./app/css/')); // путь, куда сохраняем стили
+    spriteData.css.pipe(gulp.dest('./src/scss/components')); // путь, куда сохраняем стили
 });
 
 gulp.task('pug', function() {

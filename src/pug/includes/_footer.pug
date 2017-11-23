@@ -1,4 +1,6 @@
 .sight-footer
-	-for (var i=1; i<8; i++)
-		a(href="error.html")
-	p 2011 Company work
+	.footer__links
+		- var i = ["icon-soc_fb", "icon-soc_feed", "icon-soc_google", "icon-soc_in", "icon-soc_stumb", "icon-soc_tw", "icon-soc_cirde"];
+			for name in i
+				a(class= name href="error.html")
+	p.footer--text 2011 Company work
