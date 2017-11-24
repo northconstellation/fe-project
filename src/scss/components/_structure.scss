@@ -47,10 +47,7 @@
   }
   .b-structlist__item:before {
     content: '';
-    background-image: url(../img/sprite.png);
-    background-position: -81px -81px;
-    width: 36px;
-    height: 36px;
+    @include sprite($structure-check);
     position: absolute;
     left:0;
     top: 10px;

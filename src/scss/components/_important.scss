@@ -61,26 +61,19 @@
       .b-reasoncol__text {
         @extend.b-small__text;
       }
-      .b-reasoncol__ico{
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        width: 81px;
-        height: 81px;
-        margin: 0 auto;
-      }
 
       .icon-important_ico1 {
-        @extend.b-reasoncol__ico;
-        background-position: 0px -81px;
+        @include sprite($important-ico1);
+        margin: 0 auto;
 
       }
       .icon-important_ico2 {
-        @extend.b-reasoncol__ico;
-        background-position: 0px 0px;
+        @include sprite($important-ico2);
+        margin: 0 auto;
       }
       .icon-important_ico3 {
-        @extend.b-reasoncol__ico;
-        background-position: -81px 0px;
+        @include sprite($important-ico3);
+        margin: 0 auto;
       }
     }
   }
