@@ -35,5 +35,7 @@ mixin b-tabstext(title, text, href, link)
 	.b-tabstext__loadbtn
 	.b-loadbtn
 		a.b-loadbtn__dtn(href=href)= link
-
-
+mixin first-person(title, text1, text2)
+	h3.first-person__title= title
+	p.first-person__text= text1
+	p.first-person__text= text2

@@ -1,25 +1,25 @@
 .wood-design {
-	background: $background-wood 60% no-repeat;
-	background-size: cover;
-	text-align: center;
+  background: $background-wood 60% no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .block__title--wood-design {
-	color: $primary-color-light;
+  color: $primary-color-light;
 
 }
 .block__title--wood-design:after{
-	@extend %linepsevdo;
-	border-color: $primary-color-light;
+  @extend %linepsevdo;
+  border-color: $primary-color-light;
 }
 .block__title--wood-design {
-	padding: 55px 0;
+  padding: 55px 0;
 }
 .block__watchword--wood-design {
-	color: $primary-color-light;
+  color: $primary-color-light;
 }
 .block__watchword--wood-design{
-	margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .btn__download {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 }

@@ -8,6 +8,7 @@
 
 // Mixins
 @import "components/_mixins";
+@import "components/_sprite";
 
 //Buttons
 @import "components/_buttons";
@@ -15,14 +16,35 @@
 //Header
 @import "components/_header";
 
+//tabs
+@import "components/_tabs";
+//Structure
+@import "components/_structure";
+
+//solution
+@import "components/_solution";
+
 //Important
 @import "components/_important";
+
+//Pricingoption
+@import "components/_pricingoption";
+
+//contact us
+@import "components/_contact_us";
+
+//footer
+@import "components/_footer";
 
 //Ecologist
 @import "components/_ecologist";
 
 //Wood_design
 @import "components/_wooddesign";
+//First_Person
+@import "components/_text-block";
+//Error 404
+@import "components/_error";
 
 body{
   font-family: 'HelveticaNeueCyr';
@@ -69,4 +91,19 @@ ul {
  @media (min-width: 1200px){
   max-width: 1100px;
   }
+}
+.b-block__title {
+  @include  b-block__title ($font-size-title, $font-weight-light, $primary-color-black, $text-upper);
+}
+
+.b-block__subtitle {
+  @include  b-block__subtitle ($font-size-small, $font-weight-light, $primary-color-black, $margin-subtitle);
+}
+
+.b-title__line {
+  @include b-title__line(1px, $primary-color, $margin-titleline, 7%)
+}
+
+.block__nodisplay {
+  display: none;
 }

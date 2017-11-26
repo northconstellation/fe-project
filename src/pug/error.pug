@@ -1,14 +1,20 @@
-extends layouts/_layout.pug
-block prepend head
-    +head-meta(
-    'Error 404 | Forest'
-    )
-block header
-block main
-    .wrap
-        h1.error-page__name
-        .error-page__info
-            h2.error-page__info-title Sorry!
-            p.error-page__info-text The page you’re looking for was not found
-            a.error-page__info-link Go back
-block footer
+doctype html
+block head
+	block main
+	title Forest
+	meta(name="description" content= 'Our first fe project')
+	link(rel="canonical" href= 'https://northconstellation.github.io/fe-project/app/')
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	link(rel="stylesheet", href="css/style.min.css")
+body.body--error
+	block header
+	block main
+		.wrap--error
+			h1.error-page__name 404
+			.error-page__info
+				h2.error-page__info-title Sorry!
+				p.error-page__info-text The page you’re looking for was not found
+				a(href='index.html' class='error-page__info-link') Go back
+	block footer
+
+

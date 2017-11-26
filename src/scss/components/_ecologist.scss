@@ -11,13 +11,14 @@
 	
 }
 .wrap {
-	margin-bottom: 85px; //не працює чомусь
+	margin-bottom: 85px; 
 }
 .block__title {
 	text-align: center;
 	font-size: $font-size-title;
 	text-transform: $text-upper;
 	padding: $title-padding-block;
+	font-weight: $font-weight-light;
 }
 .block__title:after{
 	@extend %linepsevdo;
@@ -56,8 +57,10 @@
 	background: $background-grey;
 	padding: 35px 15px;
 	border-radius: 20px;
-	max-height: 172px;
+	height: 90px;
+	overflow: hidden;
 	text-overflow: ellipsis;
+	line-height: $text-line-height;
 }
 .ecologist__feedback-img {
 	float: left;

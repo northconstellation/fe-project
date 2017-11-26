@@ -12,3 +12,33 @@
   text-decoration: none;
   outline: none;
 }
+
+@mixin b-block__title ($font-size, $font-weight, $primary-color, $text-transform){
+  font-size: $font-size;
+  font-weight:$font-weight;
+  color:$primary-color;
+  text-transform:$text-transform;
+}
+
+@mixin b-block__subtitle ($font-size, $font-weight, $primary-color, $margin){
+  font-size: $font-size;
+  font-weight:$font-weight;
+  color:$primary-color;
+  margin:$margin;
+}
+
+@mixin b-title__line($height, $color, $margin, $width){
+  height: $height;
+  background:$color;
+  margin:$margin;
+  width: $width;
+}
+
+@mixin border($height, $style, $color){
+  border-top:$height $style $color;
+}
+
+@mixin b-block($flex, $width){
+  flex-direction: $flex;
+  width: $width;
+}

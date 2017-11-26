@@ -1,12 +1,13 @@
 .b-inform__formheader
-    form.b-formheader(action="#" method="post")
+    .b-formheader
         .b-formheader__formtitle
             p.b-formtitle The
                 span.b-formtitle__special games
             p.b-formtitle pre-alpha
-        -var inputform= [{type: "text", placeholder: "name"}, {type: "email", placeholder: "Email"}, {type: "text", placeholder: "Message"}, {type: "submit", value: "Get started"}]
-        each item in inputform
-            if(!value)
-                input.b-formheader__input(type= item.type, placeholder= item.placeholder)
-            else
-                input.b-formheader__btn(type= item.type, value= item.value)
+        form.b-form(action="#" method="post")
+            -var inputform= [{type: "text", placeholder: "name"}, {type: "email", placeholder: "Email"}, {type: "text", placeholder: "Message"}, {type: "submit", value: "Get started"}]
+            each item in inputform
+                if(!value)
+                    input.b-formheader__input(type= item.type, placeholder= item.placeholder)
+                else
+                    input.b-formheader__btn(type= item.type, value= item.value)

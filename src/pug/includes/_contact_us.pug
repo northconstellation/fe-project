@@ -1,9 +1,13 @@
 div.contact-us
-	h2 CONTACT US
-	p For a broader coverage related to this topic.
+	h2.contact__header CONTACT US
+	p.contact-us__text For a broader coverage related to this topic.
 	form
-		+contact-us("text", "Name")
-		+contact-us("email", "Email")
-		+contact-us("text", "Message")
-		+contact-us("text", "Message")
-		input(type="submit", value="Send Message")
+		.inputs
+			.first
+				+contact-us("text", "Name")
+				+contact-us("email", "Email")
+				+contact-us("text", "Message")
+			.last
+				+contact-us("text", "Message")
+		.submit
+			input(type="submit", value="Send Message")
