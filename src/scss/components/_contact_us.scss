@@ -9,15 +9,16 @@
 	margin-bottom: 56px;
 }
 .contact-us
-	form 
-		input{
-			width: 425px;
-			height: 52px;
-			border-style: solid;
-			border-top: 0;
-			border-left: 0;
-			border-right: 0;
-			border-bottom: 1px solid black;
+	.wrap
+		form 
+			input{
+				width: 425px;
+				height: 52px;
+				border-style: solid;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				border-bottom: 1px solid black;
 }
 .first{
 	display: flex;
@@ -25,16 +26,24 @@
 	
 }
 .contact-us
-	form{
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
+	.wrap
+		form{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
 }
 .inputs{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 42px;
+	@media (min-width: 920px){
+		flex-direction: row;
+		justify-content: space-around;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 .submit{
 	display: flex;
@@ -48,4 +57,5 @@
 }
 .contact-us{
 	margin-bottom: 93px;
+		padding: $primary-padding-block;
 }

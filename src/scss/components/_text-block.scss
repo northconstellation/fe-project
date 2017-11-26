@@ -1,0 +1,21 @@
+.text-block .wrap{
+	display: flex;
+	flex-direction: column;
+	padding: $primary-padding-block;
+	justify-content: space-around;
+}
+.text-block .wrap h2{
+	font-family: $primary-font-family;
+	font-size: $font-size-minititle;
+	font-weight: $font-weight-bold;
+	margin-bottom: 18px;
+}
+.text-block .wrap p{
+	font-family: $primary-font-family;
+	font-size: $font-size-text;
+	margin-bottom: 28px;
+}
+.text-block .wrap a{
+	margin-right: auto;
+	margin-left: auto;
+}
