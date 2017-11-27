@@ -2,12 +2,14 @@ mixin head-meta(title, description, href)
 	title= title
 	meta(name="description" content= description)
 	link(rel="canonical" href= href)
+
 mixin reason_item(number, title, text)
 	.b-reason__reasoncol
 		.b-reasoncol
 			div(class=`icon-important_ico${number}`)
 			p.b-reasoncol__title= title
 			p.b-reasoncol__text= text
+
 mixin b-packet__item(title, price, subtitle)
 	p.b-packetitem__title= title
 	.b-packetitem__price
@@ -20,11 +22,13 @@ mixin b-structlist__item(title, text)
 		p.b-structlist__title= title
 		span.b-structlist__text= text
 mixin content(text, image, name, profesion)
-	p.ecologist__feedback-text= text
-	p.ecologist__feedback-img
-		img(src= image)
-	p.ecologist__feedback-name= name
-	span.ecologists__feedback-proffesion= profesion
+	.ecologist__feedback--wrap
+		.ecologist__feedback-text--wrap
+			p.ecologist__feedback-text= text
+		p.ecologist__feedback-img
+			img(src= image)
+		p.ecologist__feedback-name= name
+		span.ecologists__feedback-proffesion= profesion
 mixin contact-us(type, placeholder)
 	input(type=type, placeholder=placeholder)
 mixin b-tabstext(title, text, text, href, link)
@@ -34,5 +38,7 @@ mixin b-tabstext(title, text, text, href, link)
 	.b-tabstext__loadbtn
 	.b-loadbtn
 		a.b-loadbtn__dtn(href=href)= link
-
-
+mixin first-person(title, text1, text2)
+	h3.first-person__title= title
+	p.first-person__text= text1
+	p.first-person__text= text2

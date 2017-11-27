@@ -70,10 +70,87 @@
   font-weight: $font-weight-bold;
 }
 .ecologists__feedback-proffesion{
-  display: inline-block;
   line-height: 1.25;
-  margin: 0 0 60px 12px;
   font-size: $font-size-text;
   color: $primary-color-dark;
   font-weight: 200;
+	content: "";
+	display: block;
+	width: 65px;
+	border: 1px solid;
+	margin: 35px auto 0;
+}
+.wrap {
+	@extend .content_middle;
+	
+}
+.wrap {
+	margin-bottom: 85px; 
+}
+.block__title {
+	text-align: center;
+	font-size: $font-size-title;
+	text-transform: $text-upper;
+	padding: $title-padding-block;
+	font-weight: $font-weight-light;
+}
+.block__title:after{
+	@extend %linepsevdo;
+	border-color: $primary-color;
+} 
+.block__watchword {
+	text-align: center;
+	color: $primary-color-minititle;
+	margin-bottom: 70px;
+}
+.ecologist__feedback {
+	@media (min-width: 640px){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 85px;
+	}
+}
+.ecologist__feedback--wrap{
+	@media (min-width: 640px){
+	width: calc(50% - 30px);
+	}
+	@media (min-width: 1200px){
+	width: calc(33.3% - 30px);
+	}
+}
+.ecologist__feedback-text--wrap:after{
+	content: "";
+	display: block;
+	margin: 0 60px;
+	background: $background-ecologist;
+	width: 100px;
+	height: 45px;
+}
+.ecologist__feedback-text{
+	background: $background-grey;
+	padding: 35px 15px;
+	border-radius: 20px;
+	height: 90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: $text-line-height;
+}
+.ecologist__feedback-img {
+	float: left;
+}
+.ecologist__feedback-name{
+	margin: 10px 0 0 90px;
+	line-height: 1.25;
+	color: #000;
+	font-size: $font-size-minititle;
+	font-weight: $font-weight-bold;
+}
+.ecologists__feedback-proffesion{
+	display: inline-block;
+	line-height: 1.25;
+	margin: 0 0 60px 12px;
+	font-size: $font-size-text;
+	color: $primary-color-dark;
+	font-weight: 200;
 }

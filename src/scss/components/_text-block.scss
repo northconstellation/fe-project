@@ -1,0 +1,30 @@
+.wrap--fp-color{
+	background-image: linear-gradient($background-grey 75%, transparent 30%);
+
+}
+.wrap--fp-bg{
+	background: $background-grey;
+	 @media (min-width: 1200px){
+  	background: $background-fp center no-repeat;
+  	background-size: cover;
+  }
+}
+.wrap--width{
+	 @media (min-width: 1200px){
+	margin: -10px 150px 85px 0;
+	}
+}
+.first-person__title{
+	padding: 100px 0 35px;
+	font-size: $font-size-minititle;
+	line-height: $text-line-height;
+}
+.first-person__text{
+	font-size: $font-size-small;
+	line-height: $text-line-height;
+	padding: 30px 0;
+}
+.btn--center{
+	display: block;
+	margin: 0 auto 50px;
+}
