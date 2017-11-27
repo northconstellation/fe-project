@@ -19,3 +19,24 @@
 	font-size: $font-size-text;
 	text-align: center;
 }
+.icon-soc_fb {
+	@include sprite($soc-fb);
+}
+.icon-soc_feed {
+	@include sprite($soc-feed);
+}
+.icon-soc_google {
+	@include sprite($soc-google);
+}
+.icon-soc_in {
+	@include sprite($soc-in);
+}
+.icon-soc_stumb {
+	@include sprite($soc-stumb);
+}
+.icon-soc_tw {
+	@include sprite($soc-tw);
+}
+.icon-soc_cirde {
+	@include sprite($soc-cirde);
+}
