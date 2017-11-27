@@ -7,10 +7,22 @@
   .b-top__logo{
     @include b-block (column, 57%);
     margin: 0 2% 0 0;
+    @media (max-width: 640px){
+      display: block !important;
+      width: 100% !important;
+      margin: 5% 0 0 0 !important;
+      text-align: center;
+    }
   }
   .b-headermenu {
     @include b-block (column, 40%);
     text-align: right;
+    @media (max-width: 640px){
+      display: block !important;
+      width: 100% !important;
+      margin: 5% 0 0 0 !important;
+      text-align: center;
+    }
   }
 }
 
@@ -48,10 +60,19 @@
   .b-inform__about{
     @include b-block (column, 50%);
     margin: 0 2% 0 0;
+    @media (max-width: 640px){
+      display: block !important;
+      width: 100% !important;
+      margin: 0 0 15% 0 !important;
+    }
   }
   .b-inform__formheader {
     @include b-block (column, auto);
     text-align: right;
+    @media (max-width: 640px){
+      display: block !important;
+      width: 100% !important;
+    }
   }
   .b-about__slogan {
     font-size:$font-size-headertitle;
@@ -120,5 +141,8 @@
     -webkit-border-radius: 3px;
     border-radius: 3px;
     background: #f8fbd1;
+    @media (max-width: 640px){
+      width: 100%!important;
+    }
   }
 }

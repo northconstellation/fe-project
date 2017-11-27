@@ -8,10 +8,20 @@
     .b-tabs__blocktext{
       @include b-block (column, 57%);
       margin: 0 2% 0 0;
+      @media (max-width: 640px){
+        display: block !important;
+        width: 100% !important;
+        margin: 0 0 7% 0 !important;
+      }
     }
     .b-tabs__blockimg {
      @include b-block (column, 40%);
       text-align: right;
+      @media (max-width: 640px){
+        display: block !important;
+        width: 100% !important;
+        margin: 0 0 7% 0 !important;
+      }
     }
 
     .b-tabstext__title {
@@ -33,10 +43,22 @@
     justify-content: space-between;
     .b-blockitem{
       flex-direction: column;
+      @media (max-width: 640px){
+        display: block !important;
+        width: 100% !important;
+      }
     }
     .tab-contant_container {
       flex-direction: column;
       margin: 0 0 0 9%;
+      @media (max-width: 640px){
+        display: block !important;
+        width: 100% !important;
+        margin: 5% 0 0 0 !important;
+      }
+    }
+    @media (max-width: 640px){
+      display: block !important;
     }
   }
 
@@ -47,6 +69,9 @@
   .tab-item {
     background: $primary-color-minititle;
     @include border(1px, solid, $primary-color-light);
+    @media (max-width: 640px){
+      display: inline-block !important;
+    }
   }
 
   .active{

@@ -1,6 +1,9 @@
 .b-flex__spacebetween{
   display: flex;
   justify-content: space-between;
+  @media (max-width: 640px){
+    display: block;
+  }
 }
 
 .b-flex__colblock{
@@ -74,6 +77,11 @@
       .icon-important_ico3 {
         @include sprite($important-ico3);
         margin: 0 auto;
+      }
+      @media (max-width: 640px){
+        display: block;
+        width: 100%;
+        margin: 0 0 7% 0 !important;
       }
     }
   }

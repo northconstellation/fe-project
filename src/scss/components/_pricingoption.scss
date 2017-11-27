@@ -27,6 +27,11 @@
       &:first-child {
         margin:3% 7% 0 0;
       }
+      @media (max-width: 640px){
+        display: block;
+        width: 100%;
+        margin: 0 0 7% 0 !important;
+      }
     }
   }
   .packetlist__middle{
