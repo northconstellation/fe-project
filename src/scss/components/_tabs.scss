@@ -49,7 +49,7 @@
     @include border(1px, solid, $primary-color-light);
   }
 
-  .active{
+  .active a{
     background:$primary-color;
   }
   .tab-item a{
@@ -63,4 +63,12 @@
     display: inline-block;
     font-weight: $font-weight-medium;
   }
+}
+
+.tab-contant_container .tab{
+  display:none;
+}
+
+.tab-contant_container .tab.active{
+  display:block;
 }
